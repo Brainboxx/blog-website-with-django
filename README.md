@@ -11,7 +11,6 @@
     <li>Read blog posts: Browse and read existing blog posts</li>
     <li>Update blog posts: Edit and update your own blog posts</li>
     <li>Delete blog posts: Remove unwanted posts from your blog</li>
-    <li>Search functionality: Find specific blog posts using keywords</li>
     <li>Responsive design: Enjoy a seamless experience on desktop and mobile devices</li>
   </ul>
   
@@ -21,7 +20,7 @@
     <li>Clone the repository: `git clone https://github.com/Brainboxx/blog-website-with-django.git`</li>
     <li>Navigate to the project directory: `cd blog-website-with-django`</li>
     <li>Open the project in your preferred code editor</li>
-    <li>Open `index.html` in a web browser</li>
+  <li>Go to your terminal and run 'python manage.py runserver'</li>
   </ol>
   
   <h2>Contributing</h2>
