@@ -33,6 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,8 +46,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+    'django.contrib.postgres',
     'storages',
-    'crispy_bootstrap4'
+    'crispy_bootstrap4',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -86,11 +91,9 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DATABASE_NAME'),
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-        'HOST': os.getenv('DATABASE_HOST'),
-        'PORT': os.getenv('DATABASE_PORT'),
+        'NAME': 'blog',
+        'USER': 'blog',
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
     }
 }
 
@@ -154,8 +157,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
@@ -168,5 +171,4 @@ AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 
 MEDIA_ROOT = ''
-MEDIA_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, '')
-
+MEDIA_URL = '/media/'

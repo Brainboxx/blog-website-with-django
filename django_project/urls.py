@@ -19,6 +19,12 @@ from django.urls import path, include
 from users import views as user_views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.sitemaps.views import sitemap
+from blog.sitemaps import PostSitemap
+
+sitemaps = {
+    'posts': PostSitemap,
+}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -38,7 +44,8 @@ urlpatterns = [
     path('password-reset-complete',
          auth_views.PasswordResetCompleteView.as_view(template_name='users/password_reset_complete.html'),
          name='password_reset_complete'),
-    path('', include('blog.urls')),
+    path('', include('blog.urls', namespace='blog')),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
