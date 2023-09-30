@@ -2,16 +2,20 @@
   <h1>My Blog Project</h1>
   
   <h2>Description</h2>
-  <p>Welcome to my Blog project! This is a simple blogging platform developed using HTML, CSS, and JavaScript. The project allows users to create, read, update, and delete blog posts. It provides a user-friendly interface with a responsive design that works well across different devices.</p>
+  <p>This is a simple blogging platform developed using HTML, CSS, and Django. The project allows users to create, read, update, and delete blog posts. It provides a user-friendly interface with a responsive design that works well across different devices.</p>
   
   <h2>Features</h2>
   <ul>
     <li>User authentication: Register and log in securely to manage blog posts</li>
-    <li>Create blog posts: Write and publish articles with a rich text editor</li>
+    <li>Create blog posts</li>
     <li>Read blog posts: Browse and read existing blog posts</li>
     <li>Update blog posts: Edit and update your own blog posts</li>
     <li>Delete blog posts: Remove unwanted posts from your blog</li>
     <li>Responsive design: Enjoy a seamless experience on desktop and mobile devices</li>
+    <li>Markdown formatting</li>
+    <li>Tags for posts with Django-taggit</li>
+    <li>Sitemap</li>
+    <li>PostgreSQL full-text search engine capabilities</li>
   </ul>
   
   <h2>Installation</h2>
