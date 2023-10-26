@@ -54,23 +54,6 @@
     ```
 17. Access the application in your web browser at http://localhost:8000.
   
-  # Contributing
-  <p>Contributions are welcome! If you would like to enhance the project or add new features, please follow these steps:</p>
-  1. Fork the repository
-  2. Create a new branch:
-      ```
-      git checkout -b feature/your-feature-name
-      ```
-  3. Make your changes
-  4. Commit your changes:
-      ```
-       git commit -m 'Add some feature'
-      ```
-  5. Push to the branch: 
-      ```
-      git push origin feature/your-feature-name
-      ```
-  6. Create a pull request
   
   <h2>License</h2>
   <p>This project is licensed under the MIT License. See the `LICENSE` file for more information.</p>
