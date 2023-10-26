@@ -18,40 +18,59 @@
     <li>PostgreSQL full-text search engine capabilities</li>
   </ul>
   
- # Installation 
-  <p>To run the project locally, please follow these steps:</p>
-   1. Clone the repository:
-      ```
-      git clone https://github.com/Brainboxx/blog-website-with-django.git
-      ```
-   2. Navigate to the project directory:
-      ```
-      cd blog-website-with-django
-      ```
-  3. Open the project in your preferred code editor
-  
-  4. Go to your terminal and run
-      ```
-      python manage.py runserver
-      ```
+ # Installation
+1. Clone the repository:
+   ```
+   git clone https://github.com/Brainboxx/blog-website-with-django.git
+   ```
+3. Change to the project directory:
+   ```
+   cd ShelterSearch
+   ```
+5. Create a virtual environment:
+   ```
+   python3 -m venv myenv
+   ```
+7. Activate the virtual environment:
+   ```
+   myenv/bin/activate
+   ```
+9. Install the project dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+11. Set up the database:
+    ```
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+13. Create a superuser (admin) account:
+    ```
+    python manage.py createsuperuser
+    ```
+15. Run the development server:
+    ```
+    python manage.py runserver
+    ```
+17. Access the application in your web browser at http://localhost:8000.
   
   # Contributing
   <p>Contributions are welcome! If you would like to enhance the project or add new features, please follow these steps:</p>
-    1. Fork the repository
-    2. Create a new branch:
+  1. Fork the repository
+  2. Create a new branch:
       ```
       git checkout -b feature/your-feature-name
       ```
-    3. Make your changes
-    4. Commit your changes:
+  3. Make your changes
+  4. Commit your changes:
       ```
        git commit -m 'Add some feature'
       ```
-    5. Push to the branch: 
+  5. Push to the branch: 
       ```
       git push origin feature/your-feature-name
       ```
-    6. Create a pull request
+  6. Create a pull request
   
   <h2>License</h2>
   <p>This project is licensed under the MIT License. See the `LICENSE` file for more information.</p>
