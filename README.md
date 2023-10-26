@@ -20,41 +20,38 @@
   
  # Installation 
   <p>To run the project locally, please follow these steps:</p>
-  <ol>
-    <li>Clone the repository: </li>
+   1. Clone the repository:
     ```
     git clone https://github.com/Brainboxx/blog-website-with-django.git
     ```
-    <li>Navigate to the project directory: </li>
+   2. Navigate to the project directory:
     ```
     cd blog-website-with-django
     ```
-    <li>Open the project in your preferred code editor</li>
-  <li>Go to your terminal and run</li>
+  3. Open the project in your preferred code editor
+  
+  4. Go to your terminal and run
     ```
     python manage.py runserver
     ```
-  </ol>
   
-  <h2>Contributing</h2>
+  # Contributing
   <p>Contributions are welcome! If you would like to enhance the project or add new features, please follow these steps:</p>
-  <ol>
-    <li>Fork the repository</li>
-    <li>Create a new branch: </li>
+    1. Fork the repository
+    2. Create a new branch:
     ```
     git checkout -b feature/your-feature-name
     ```
-    <li>Make your changes</li>
-    <li>Commit your changes:</li>
+    3. Make your changes
+    4. Commit your changes:
     ```
      git commit -m 'Add some feature'
     ```
-    <li>Push to the branch: </li>
+    5. Push to the branch: 
     ```
     git push origin feature/your-feature-name
     ```
-    <li>Create a pull request</li>
-  </ol>
+    6. Create a pull request
   
   <h2>License</h2>
   <p>This project is licensed under the MIT License. See the `LICENSE` file for more information.</p>
