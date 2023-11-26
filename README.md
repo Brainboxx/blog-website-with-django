@@ -25,7 +25,7 @@
    ```
 3. Change to the project directory:
    ```
-   cd ShelterSearch
+   cd blog-website-with-django
    ```
 5. Create a virtual environment:
    ```
